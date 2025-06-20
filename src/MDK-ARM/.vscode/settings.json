@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "mymain.h": "c",
+        "menu.h": "c",
+        "stdint.h": "c",
+        "oledfont.h": "c",
+        "menufontshow.h": "c",
+        "menuconfig.h": "c",
+        "menu_tool.h": "c",
+        "graphicalfunctions.h": "c"
+    }
+}
