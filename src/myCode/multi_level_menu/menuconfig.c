@@ -7,9 +7,12 @@
 #include "menu_tool.h" //工具
 
 
-menu_area mainMenu; //第一个菜单
+static menu_area startMenu;
+static menu_area mainMenu; //第一个菜单
 
-static void menu_f(menu_area *target);
+
+static void menu_start(menu_area *target);
+static void menu_main(menu_area *target);
 
 /*
 	功能：初始化菜单列表 <此函数名不可修改>
@@ -19,10 +22,16 @@ static void MakeMenu(void)
 	AddToFunctionTicker(50, normalRun, MenuRefresh, 0); //定时刷新
 	TargetMenuPointrt.style = ENABLE; //指示器动效
 	
-	TargetMenu = &mainMenu;
+	TargetMenu = &startMenu;
 	
-	SetMenu(&mainMenu, 0, 20, 70, 20, ENABLE, NULL)->menuinterface = menu_f;
+	// 开机界面
+	SetMenu(&startMenu, 0, 0, 0, 0, ENABLE, NULL)->menuinterface = menu_start;
+	AddToMenuListInit(&startMenu);
+	AddToSpecialFunction(&startMenu, MenuTime, 50);
 
+	
+	SetMenu(&mainMenu, 0, 0, 0, 0, ENABLE, NULL)->menuinterface = menu_main;
+	AddToMenuListInit(&mainMenu);
 }
 
 /*
@@ -30,12 +39,52 @@ static void MakeMenu(void)
 	注意：函数必须是 void 类型，形参必须且仅为 menu_area *target
 */
 
-
-static void menu_f(menu_area *target)
+static void menu_start(menu_area *target)
 {
-	static uint8_t i=0;
-	m_printf(target, 0, 0, "滋生123 %d", i++);
-	
+	static const char *str = "K210 TEST";
+	static uint8_t count=0;
+    if (CkeckMenuList(target))
+	{
+		FontInfoType *font = StringDeal(str);
+		uint8_t str_len_size = 
+		target->x = MSCX(font->maxPix);
+		target->y = MSCY(font->ascsize[1]);
+		target->width = font->maxPix;
+		target->high = font->ascsize[1];
+		return;
+	}
+	if (TriggerCheck(target, MenuTime))
+	{
+		count++;
+	}
+	if (count == 30)
+	{
+		count=0;
+		gotoMenu(&mainMenu, Menu_Sub);
+	}
+
+	m_printf(target, 0, 0, "%s", str);
+
+}
+
+
+static void menu_main(menu_area *target)
+{
+	static const char *title_str = "k210 TEST";
+	static uint8_t title_str_size = 0;
+	if (CkeckMenuList(target))
+	{
+		FontInfoType *font = StringDeal(title_str);
+		title_str_size = font->maxPix;
+		target->x = 0;
+		target->y =0;
+		target->width = SCREENWIDTH;
+		target->high = font->ascsize[1];
+		return;
+	}
+	m_printf(NULL, MSCX(title_str_size), TargetMenuPointrt.y, "%s", title_str);
+
+
 	
 
 }

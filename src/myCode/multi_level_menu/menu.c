@@ -979,10 +979,10 @@ MenuTargetTypedef TargetMenuPointrt=// 实时目标菜单
 {
 	.TargetMenuP=NULL, 
 	.LastTargetMenuP=NULL, 
-	.x=60, 
-	.y=30, 
-	.width=SCREENWIDTH/2, 
-	.high=SCREENHIGH/2, 
+	.x=-10, 
+	.y=-10, 
+	.width=0, 
+	.high=0, 
 	.R=3
 };
 

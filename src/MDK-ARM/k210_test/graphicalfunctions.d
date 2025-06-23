@@ -1,9 +1,9 @@
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\Graphicalfunctions.c
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\Graphicalfunctions.h
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\menu.h
-k210_test\graphicalfunctions.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-k210_test\graphicalfunctions.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-k210_test\graphicalfunctions.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+k210_test\graphicalfunctions.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+k210_test\graphicalfunctions.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+k210_test\graphicalfunctions.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\oled.h
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\menu.h
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\menuconfig.h
@@ -21,7 +21,7 @@ k210_test\graphicalfunctions.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 k210_test\graphicalfunctions.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-k210_test\graphicalfunctions.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+k210_test\graphicalfunctions.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -37,5 +37,5 @@ k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ha
 k210_test\graphicalfunctions.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 k210_test\graphicalfunctions.o: ../Core/Inc/spi.h
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\menu_tool.h
-k210_test\graphicalfunctions.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+k210_test\graphicalfunctions.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 k210_test\graphicalfunctions.o: ..\myCode\multi_level_menu\menufontshow.h
