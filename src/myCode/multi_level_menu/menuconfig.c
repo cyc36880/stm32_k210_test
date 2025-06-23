@@ -21,7 +21,7 @@ static void MakeMenu(void)
 	
 	TargetMenu = &mainMenu;
 	
-	SetMenu(&mainMenu, 0, 0, 0, 0, ENABLE, NULL)->menuinterface = menu_f;
+	SetMenu(&mainMenu, 0, 20, 70, 20, ENABLE, NULL)->menuinterface = menu_f;
 
 }
 
@@ -33,7 +33,8 @@ static void MakeMenu(void)
 
 static void menu_f(menu_area *target)
 {
-	m_printf(NULL, 0, 0, "влиЗ123");
+	static uint8_t i=0;
+	m_printf(target, 0, 0, "влиЗ123 %d", i++);
 	
 	
 

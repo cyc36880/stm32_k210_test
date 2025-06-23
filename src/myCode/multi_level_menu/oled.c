@@ -24,7 +24,7 @@ static void OLED_WR_Byte(u8 dat,u8 cmd)
 	  OLED_DC_Clr();		  
 //	OLED_CS_Clr();
 
-	HAL_SPI_Transmit_DMA(&hspi1, &dat, 1); // 硬件 DMA SPI
+	HAL_SPI_Transmit(&hspi1, &dat, 1, HAL_MAX_DELAY); // 硬件 DMA SPI
 	
 //	OLED_CS_Set();
 	OLED_DC_Set();   	  
@@ -77,6 +77,7 @@ void disp_flush(void)
 
 void OLED_Init(void)     //初始化
 {
+	OLED_CS_Clr();
   	OLED_RST_Set();
 	delay_ms(100);
 	OLED_RST_Clr();

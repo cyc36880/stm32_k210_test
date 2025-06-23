@@ -29,7 +29,7 @@
 "k210_test\oled.o"
 "k210_test\oledfont.o"
 "k210_test\mymain.o"
---strict --scatter "k210_test\k210_test.sct"
+--library_type=microlib --nodebug --strict --scatter "k210_test\k210_test.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "k210_test.map" -o k210_test\k210_test.axf
