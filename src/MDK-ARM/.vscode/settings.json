@@ -7,6 +7,9 @@
         "menufontshow.h": "c",
         "menuconfig.h": "c",
         "menu_tool.h": "c",
-        "graphicalfunctions.h": "c"
+        "graphicalfunctions.h": "c",
+        "device_iic.h": "c",
+        "iic_port.h": "c",
+        "k210_check.h": "c"
     }
 }

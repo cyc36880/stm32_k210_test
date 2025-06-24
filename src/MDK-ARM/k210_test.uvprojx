@@ -53,8 +53,8 @@
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
-          <DebugInformation>0</DebugInformation>
-          <BrowseInformation>0</BrowseInformation>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>1</BrowseInformation>
           <ListingPath></ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../myCode/multi_level_menu;../myCode</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../myCode/multi_level_menu;../myCode;..\myCode\IIC;..\myCode\delay</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -603,12 +603,42 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>delay</GroupName>
+          <Files>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\myCode\delay\delay.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>IIC</GroupName>
+          <Files>
+            <File>
+              <FileName>Device_IIC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\myCode\IIC\Device_IIC.c</FilePath>
+            </File>
+            <File>
+              <FileName>IIC_Port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\myCode\IIC\IIC_Port.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>myMain</GroupName>
           <Files>
             <File>
               <FileName>myMain.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\myCode\myMain.c</FilePath>
+            </File>
+            <File>
+              <FileName>k210_check.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\myCode\k210_check.c</FilePath>
             </File>
           </Files>
         </Group>

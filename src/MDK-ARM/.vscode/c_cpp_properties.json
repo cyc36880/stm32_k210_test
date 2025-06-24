@@ -10,6 +10,8 @@
                 "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\CMSIS\\Include",
                 "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode\\multi_level_menu",
                 "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode",
+                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode\\IIC",
+                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode\\delay",
                 "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\MDK-ARM",
                 "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Core\\Src",
                 "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Src"
