@@ -29,7 +29,6 @@ static void MakeMenu(void)
 	AddToMenuListInit(&startMenu);
 	AddToSpecialFunction(&startMenu, MenuTime, 50);
 
-	
 	SetMenu(&mainMenu, 0, 0, 0, 0, ENABLE, NULL)->menuinterface = menu_main;
 	AddToMenuListInit(&mainMenu);
 }
@@ -83,10 +82,6 @@ static void menu_main(menu_area *target)
 		return;
 	}
 	m_printf(NULL, MSCX(title_str_size), TargetMenuPointrt.y, "%s", title_str);
-
-
-	
-
 }
 
 
