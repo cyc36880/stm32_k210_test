@@ -36,3 +36,5 @@ k210_test\mymain.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 k210_test\mymain.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 k210_test\mymain.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 k210_test\mymain.o: ../Core/Inc/spi.h
+k210_test\mymain.o: ..\myCode\IIC\IIC_Port.h
+k210_test\mymain.o: ..\myCode\IIC\Device_IIC.h

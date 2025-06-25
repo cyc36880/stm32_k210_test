@@ -7,6 +7,7 @@
 #include "menu_tool.h" //工具
 
 
+
 static menu_area startMenu;
 static menu_area mainMenu; //第一个菜单
 

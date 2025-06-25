@@ -22,22 +22,38 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\Users\zishen\Desktop\stm32_k210_test\src\MDK-ARM\k210_test.uvprojx
-Project File Date:  06/23/2025
+Project File Date:  06/24/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin'
 Build target 'k210_test'
+compiling k210_check.c...
+compiling Device_IIC.c...
+..\myCode\IIC\Device_IIC.c(329): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "i"  (declared at line 348)
+          goto ack_error;
+          ^
+..\myCode\IIC\Device_IIC.c(337): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "i"  (declared at line 348)
+              goto ack_error;
+              ^
+..\myCode\IIC\Device_IIC.c(345): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "i"  (declared at line 348)
+          goto ack_error;
+          ^
+..\myCode\IIC\Device_IIC.c: 3 warnings, 0 errors
+compiling myMain.c...
 compiling menuconfig.c...
-..\myCode\multi_level_menu\menuconfig.c(48): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+..\myCode\multi_level_menu\menuconfig.c(49): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
   		FontInfoType *font = StringDeal(str);
-..\myCode\multi_level_menu\menuconfig.c(77): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+..\myCode\multi_level_menu\menuconfig.c(78): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
   		FontInfoType *font = StringDeal(title_str);
 ..\myCode\multi_level_menu\menuconfig.c: 2 warnings, 0 errors
-compiling menu.c...
+compiling IIC_Port.c...
 linking...
-Program Size: Code=15784 RO-data=1920 RW-data=324 ZI-data=3124  
+Program Size: Code=18540 RO-data=1936 RW-data=328 ZI-data=3352  
 FromELF: creating hex file...
-"k210_test\k210_test.axf" - 0 Error(s), 2 Warning(s).
+"k210_test\k210_test.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -61,7 +77,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>
