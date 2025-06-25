@@ -10,6 +10,8 @@
         "graphicalfunctions.h": "c",
         "device_iic.h": "c",
         "iic_port.h": "c",
-        "k210_check.h": "c"
+        "k210_check.h": "c",
+        "main.h": "c",
+        "i2c.h": "c"
     }
 }

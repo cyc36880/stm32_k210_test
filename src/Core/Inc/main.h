@@ -63,14 +63,14 @@ void Error_Handler(void);
 #define OLED_RST_GPIO_Port GPIOA
 #define OLED_DC_Pin GPIO_PIN_0
 #define OLED_DC_GPIO_Port GPIOB
-#define key_1_Pin GPIO_PIN_2
-#define key_1_GPIO_Port GPIOB
-#define key_2_Pin GPIO_PIN_10
-#define key_2_GPIO_Port GPIOB
 #define scl_Pin GPIO_PIN_12
 #define scl_GPIO_Port GPIOB
 #define sda_Pin GPIO_PIN_13
 #define sda_GPIO_Port GPIOB
+#define key_1_Pin GPIO_PIN_14
+#define key_1_GPIO_Port GPIOB
+#define key_2_Pin GPIO_PIN_15
+#define key_2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

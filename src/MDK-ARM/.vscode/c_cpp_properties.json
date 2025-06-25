@@ -3,18 +3,18 @@
         {
             "name": "k210_test",
             "includePath": [
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Core\\Inc",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\CMSIS\\Include",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode\\multi_level_menu",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode\\IIC",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\myCode\\delay",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\MDK-ARM",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Core\\Src",
-                "d:\\Users\\zishen\\Desktop\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Src"
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Core\\Inc",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Drivers\\CMSIS\\Include",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\myCode\\multi_level_menu",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\myCode",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\myCode\\IIC",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\myCode\\delay",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\MDK-ARM",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Core\\Src",
+                "d:\\Desktop\\k210_code\\k210\\test\\stm32_k210_test\\src\\Drivers\\STM32F1xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

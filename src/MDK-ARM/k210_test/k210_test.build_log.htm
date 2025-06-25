@@ -5,55 +5,37 @@
 <h2>Tool Versions:</h2>
 IDE-Version: ¦ÌVision V5.39.0.0
 Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 123 123, 123, LIC=8VRJ7-EY8XU-74MS0-BL01X-T55IH-WRT83
+License Information: qwe qwe, qwe, LIC=EXJT4-FWFG7-CXZU6-D96NW-IEFB8-4WHFY
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
-Toolchain Path:  D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 7 (build 960)
-Assembler:       Armasm.exe V5.06 update 7 (build 960)
-Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
-Library Manager: ArmAr.exe V5.06 update 7 (build 960)
-Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
 CPU DLL:         SARMCM3.DLL V5.39.0.0
 Dialog DLL:      DCM.DLL V1.17.5.0
 Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-D:\Users\zishen\Desktop\stm32_k210_test\src\MDK-ARM\k210_test.uvprojx
-Project File Date:  06/24/2025
+D:\Desktop\k210_code\k210\test\stm32_k210_test\src\MDK-ARM\k210_test.uvprojx
+Project File Date:  06/25/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.05 update 1 (build 106)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'k210_test'
-compiling k210_check.c...
-compiling Device_IIC.c...
-..\myCode\IIC\Device_IIC.c(329): warning:  #546-D: transfer of control bypasses initialization of:
-            variable "i"  (declared at line 348)
-          goto ack_error;
-          ^
-..\myCode\IIC\Device_IIC.c(337): warning:  #546-D: transfer of control bypasses initialization of:
-            variable "i"  (declared at line 348)
-              goto ack_error;
-              ^
-..\myCode\IIC\Device_IIC.c(345): warning:  #546-D: transfer of control bypasses initialization of:
-            variable "i"  (declared at line 348)
-          goto ack_error;
-          ^
-..\myCode\IIC\Device_IIC.c: 3 warnings, 0 errors
-compiling myMain.c...
 compiling menuconfig.c...
-..\myCode\multi_level_menu\menuconfig.c(49): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+..\myCode\multi_level_menu\menuconfig.c(82): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
   		FontInfoType *font = StringDeal(str);
-..\myCode\multi_level_menu\menuconfig.c(78): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
+..\myCode\multi_level_menu\menuconfig.c(127): warning:  #167-D: argument of type "const char *" is incompatible with parameter of type "const uint8_t *"
   		FontInfoType *font = StringDeal(title_str);
 ..\myCode\multi_level_menu\menuconfig.c: 2 warnings, 0 errors
-compiling IIC_Port.c...
 linking...
-Program Size: Code=18540 RO-data=1936 RW-data=328 ZI-data=3352  
-FromELF: creating hex file...
-"k210_test\k210_test.axf" - 0 Error(s), 5 Warning(s).
+Program Size: Code=25060 RO-data=1964 RW-data=336 ZI-data=3440  
+"k210_test\k210_test.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -70,14 +52,14 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_k210_test
-  D:/Keil_v5/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  D:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+  D:/Keil_v5/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Keil_v5/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

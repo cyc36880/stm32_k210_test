@@ -1,8 +1,8 @@
 /*
  * @Author       : 蔡雅超 (ZIShen)
- * @LastEditors  : zishen
+ * @LastEditors  : ZIShen
  * @Date         : 2024-09-21 12:24:15
- * @LastEditTime : 2025-06-24 22:35:17
+ * @LastEditTime : 2025-06-25 11:20:54
  * @Description  : 
  * Copyright (c) 2024 Author 蔡雅超 email: 2672632650@qq.com, All Rights Reserved.
  */
@@ -104,89 +104,89 @@ static uint8_t _IIC_WaitAck(_SOFT_IIC_DRIVE *self)
 
 static void _IIC_SendByte(_SOFT_IIC_DRIVE *self, uint8_t byte)
 {
-    // self->_SDA_output(self);
-    // for(uint8_t i=0; i<8; i++)
-    // {
-    //     self->_SCL_write(self, 0);
-    //     self->_Delay(self);
-
-    //     self->_SDA_write(self, byte >> 7);
-    //     byte <<= 1;
-
-    //     self->_Delay(self);
-
-    //     self->_SCL_write(self, 1);
-    //     self->_Delay(self);
-    // }
-    // self->_SCL_write(self, 0);
-    // self->_Delay(self);
     self->_SDA_output(self);
-    self->_SCL_write(self, 0);
-
     for(uint8_t i=0; i<8; i++)
     {
-        self->_SDA_write(self, byte >> 7);
-        byte <<= 1;
-        self->_Delay(self);
-        self->_SCL_write(self, 1);
-        self->_Delay(self);
         self->_SCL_write(self, 0);
         self->_Delay(self);
+
+        self->_SDA_write(self, byte >> 7);
+        byte <<= 1;
+
+        self->_Delay(self);
+
+        self->_SCL_write(self, 1);
+        self->_Delay(self);
     }
+    self->_SCL_write(self, 0);
+    self->_Delay(self);
+    // self->_SDA_output(self);
+    // self->_SCL_write(self, 0);
+
+    // for(uint8_t i=0; i<8; i++)
+    // {
+    //     self->_SDA_write(self, byte >> 7);
+    //     byte <<= 1;
+    //     self->_Delay(self);
+    //     self->_SCL_write(self, 1);
+    //     self->_Delay(self);
+    //     self->_SCL_write(self, 0);
+    //     self->_Delay(self);
+    // }
 
 }
 
 static uint8_t _IIC_ReadByte(_SOFT_IIC_DRIVE *self, uint8_t ack)
 {
-    uint8_t byte = 0;
-
-    self->_SDA_write(self, 1);
-    self->_SDA_input(self);
-    
-    for(uint8_t i=0; i<8; i++)
-    {
-        byte <<= 1;
-        self->_SCL_write(self, 1);
-        self->_Delay(self);
-        if(self->_SDA_read(self))
-        {
-            byte |= 0x01;
-        }
-        self->_SCL_write(self, 0);
-        self->_Delay(self);
-    }
-    if(ack == IIC_ACK) self->ack(self);
-    else self->nack(self);
-
-    return byte;
-    
-   
     // uint8_t byte = 0;
 
+    // self->_SDA_write(self, 1);
     // self->_SDA_input(self);
+    
     // for(uint8_t i=0; i<8; i++)
     // {
-    //     self->_SCL_write(self, 0);
-    //     self->_Delay(self);
-    //     self->_SCL_write(self, 1);
-    //     // self->_Delay(self);
     //     byte <<= 1;
+    //     self->_SCL_write(self, 1);
+    //     self->_Delay(self);
     //     if(self->_SDA_read(self))
     //     {
-    //         byte++;
+    //         byte |= 0x01;
     //     }
+    //     self->_SCL_write(self, 0);
     //     self->_Delay(self);
     // }
     // if(ack == IIC_ACK) self->ack(self);
     // else self->nack(self);
 
     // return byte;
+    
+   
+    uint8_t byte = 0;
+
+    self->_SDA_input(self);
+    for(uint8_t i=0; i<8; i++)
+    {
+        self->_SCL_write(self, 0);
+        self->_Delay(self);
+        self->_SCL_write(self, 1);
+        // self->_Delay(self);
+        byte <<= 1;
+        if(self->_SDA_read(self))
+        {
+            byte++;
+        }
+        self->_Delay(self);
+    }
+    if(ack == IIC_ACK) self->ack(self);
+    else self->nack(self);
+
+    return byte;
 }
 
 //  设置恢复到默认值
 static void _IIC_set_default(_SOFT_IIC_DRIVE *self)
 {
-    self->delay_time_us = 100;
+    self->delay_time_us = 5;
     self->waitack_delayUnits = 0;
 }
 

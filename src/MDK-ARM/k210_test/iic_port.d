@@ -1,9 +1,9 @@
 k210_test\iic_port.o: ..\myCode\IIC\IIC_Port.c
 k210_test\iic_port.o: ..\myCode\IIC\IIC_Port.h
 k210_test\iic_port.o: ..\myCode\IIC\Device_IIC.h
-k210_test\iic_port.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-k210_test\iic_port.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-k210_test\iic_port.o: ..\myCode\delay\delay.h
+k210_test\iic_port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+k210_test\iic_port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+k210_test\iic_port.o: ../myCode/delay/delay.h
 k210_test\iic_port.o: ../Core/Inc/main.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 k210_test\iic_port.o: ../Core/Inc/stm32f1xx_hal_conf.h
@@ -18,7 +18,7 @@ k210_test\iic_port.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 k210_test\iic_port.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-k210_test\iic_port.o: D:\Keil_v5\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+k210_test\iic_port.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -28,6 +28,7 @@ k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
 k210_test\iic_port.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
